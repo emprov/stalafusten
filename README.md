@@ -30,11 +30,13 @@ This starts two servers:
 * http server listening on port 5500, using node.js
 * websocket server listening on port 3000, using socket.io
 
-To start playing, go to http://<host>:5500 . And in local setup this is
+To start playing, go to http://host:5500 . And in local setup this is
 
 ```
 http://localhost:5500
 ```
+
+Anyone opening up this page will simply join the game.
 
 ## Running the tests
 
