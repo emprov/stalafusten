@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stadt, Land, Fluss, Trennungsgrund</title>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .message-container {
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron message-container col-md-2">
+    <h1 id="game-letter"></h1>
+    <p class="lead" id="notification-subheadline">"Reset" zum Starten eines Spiels drücken</p>
+    <p class="lead" id="notification-subsubheadline"></p>
+
+  </div>
+
+  <div class="col-md-4">
+    <div class="message-container">
+      <form id="answer-form" class=" ">
+        <div class="form-group">
+          <label for="city">Stadt</label>
+          <input id="city" type="text" class="form-control" name="city" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Land</label>
+          <input id="country" type="text" class="form-control" name="country" required>
+        </div>
+        <div class="form-group">
+          <label for="river">Fluss</label>
+          <input id="river" type="text" class="form-control" name="river" required>
+        </div>
+        <div class="form-group">
+          <label for="divorceFor">Trennungsgrund</label>
+          <input id="divorceFor" type="text" class="form-control" name="divorceFor" required>
+        </div>
+        <button id="submit-answer-btn" class="btn btn-primary" type="submit">Send</button>
+        <input id="reset-btn" type="reset" value="Reset">
+      </form>
+    </div>
+  </div>
+  <div id="game-results-div" class="col-md-6"></div>
+
+</body>
+
+</html>
