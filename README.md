@@ -1,5 +1,5 @@
 # stalafusten
-A simple real time multiplayer game about cities, countries, rivers and reasons for a divorce.
+A simple, real-time multiplayer game about cities, countries, rivers and reasons for a divorce.
 
 
 ## Getting Started
@@ -45,7 +45,7 @@ Currently, this is a protoype without tests.
 
 ## Deployment
 
-I think you can run this on any machine accessible via TCP, with open ports 5500 and 3000. Remember: This is a prototype, not a production ready project. Just have fun with it.
+I think you can run this on any machine accessible via TCP, with open ports 5500 and 3000. Remember: This is a prototype, not a production ready project. Just have fun with it and don't rely on it.
 
 ## Built With
 
